@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "HomeServlet", urlPatterns = "/hello")
+@WebServlet(name = "HelloWorldServlet", urlPatterns = "/hello")
 public class HelloWorldServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -13,7 +13,6 @@ public class HelloWorldServlet extends HttpServlet {
 
         PrintWriter out = response.getWriter();
         out.println("<h1>Hello World!!!</h1>");
-
 
     }
 }
